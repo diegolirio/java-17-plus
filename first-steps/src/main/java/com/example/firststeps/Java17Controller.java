@@ -12,8 +12,14 @@ public class Java17Controller {
 
     @GetMapping
     public List<Customer> getList() {
+
+        String firstname = """
+                Diego
+                Lirio
+                """;
+
         return List.of(
-                new Customer("Diego", 35)
+                new Customer(firstname, 35)
         );
     }
 }
